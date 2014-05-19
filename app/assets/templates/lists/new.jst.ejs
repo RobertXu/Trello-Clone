@@ -1,0 +1,12 @@
+<h3>New List!</h3>
+
+<form id="list_form">
+  <label> Title
+    <input type="text" name="list[title]" value="" id="some_name">
+  </label>
+
+  <input type="hidden" name="list[board_id]" value="<%= model.id %>">
+  <input type="hidden" name="list[rank]" value="<%= model.nextRank() %>">
+
+  <input type="submit">
+</form>
